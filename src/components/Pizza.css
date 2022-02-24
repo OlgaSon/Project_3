@@ -1,0 +1,44 @@
+.pizza {
+    position: relative;
+    margin: 5vh auto;
+    background: #d2b48c;
+    background-image: radial-gradient(circle, rgba(255, 215, 0, 0.24) 30%, transparent 58%), radial-gradient(circle, #fffacd 55%, transparent 58%), radial-gradient(circle, #b22222 60%, transparent 61%), radial-gradient(circle, rgba(139, 69, 19, 0.4) 58%, transparent 64%), radial-gradient(circle, transparent 66%, #8b4513 81%);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    width: 300px;
+    height: 300px;
+}
+
+.pizza::before {
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 75px;
+    top: 75px;
+    background: #b22222;
+    border-radius: 50%;
+    box-shadow: 30px 35px 0 -5px #fff, 55px -30px 0 -5px #fff, -20px 35px 0 -5px #fff, 45px 100px 0 -5px #fff, 100px 35px 0 -5px #fff, 125px 105px 0 -5px #fff, 60px 55px 0 #b22222, 90px -20px 0 #b22222, -15px 75px 0 #b22222, 135px 45px 0 #b22222, 30px 130px 0 #b22222, 90px 120px 0 #b22222;
+}
+
+.vegan::before {
+    background: #8dd650;
+    box-shadow: 30px 35px 0 -5px #f73a3a, 55px -30px 0 -5px #f73a3a, -20px 35px 0 -5px #f73a3a, 45px 100px 0 -5px #f73a3a, 100px 35px 0 -5px #f73a3a, 125px 105px 0 -5px #f73a3a, 60px 55px 0 #8dd650, 90px -20px 0 #8dd650, -15px 75px 0 #8dd650, 135px 45px 0 #8dd650, 30px 130px 0 #8dd650, 90px 120px 0 #8dd650;
+}
+
+.cheese::before {
+    background: #f6de5a;
+    box-shadow: 30px 35px 0 -5px #fff, 55px -30px 0 -5px #fff, -20px 35px 0 -5px #fff, 45px 100px 0 -5px #fff, 100px 35px 0 -5px #fff, 125px 105px 0 -5px #fff, 60px 55px 0 #f6de5a, 90px -20px 0 #f6de5a, -15px 75px 0 #f6de5a, 135px 45px 0 #f6de5a, 30px 130px 0 #f6de5a, 90px 120px 0 #f6de5a;
+}
+
+.pizza::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 15px;
+    left: 120px;
+    top: 97px;
+    background: #1d840e;
+    border-radius: 0px 10px;
+    box-shadow: 75px 5px 0 1px #1d840e, -70px 45px 0 1px #1d840e, -10px 80px 0 1px #1d840e, -35px 110px 0 2px #1d840e, 40px -55px 0 1px #1d840e, 50px 80px 0 1px #1d840e, 110px 75px 0 2px #1d840e, 115px 0 0 2px #1d840e, 30px -10px 0.5px #745656, -15px -40px 0.5px #745656, -15px 50px 0.5px #745656, 30px 120px 0.5px #745656, 65px 60px 0.5px #745656, 85px 115px 0.5px #745656;
+}

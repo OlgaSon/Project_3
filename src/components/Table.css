@@ -1,0 +1,26 @@
+.guests {
+    width: 300px;
+    margin: auto;
+}
+
+thead>tr>th {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.resultRow>td {
+    padding-top: 10px;
+}
+
+#pay {
+    height: auto;
+    margin: 0;
+    min-width: 1px;
+}
+
+.tableRow>.guest,
+.tableRow>.eater,
+.tableRow>.vegan {
+    height: 10px;
+    background-color: initial;
+}

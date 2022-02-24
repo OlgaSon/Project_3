@@ -1,0 +1,8 @@
+.pizzaSlice {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #d2b48c99;
+    transform-origin: 50% 100%;
+}

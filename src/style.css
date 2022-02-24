@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background: #C8EAF5;
+    background-image: url("https://img1.goodfon.ru/wallpaper/nbig/f/48/skatert-kletki-polotno-tkan-5450.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+button {
+    border-radius: 4px;
+    height: 30px;
+    margin: 10px 0;
+    min-width: 100px;
+}
+
+button:disabled {
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+}
+
+button[type="submit"] {
+    background: #82dbf8bb;
+}
+
+button[type="submit"]:hover {
+    background: #82dbf8;
+}
+
+button:enabled:active {
+    transition: 0.1s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}

@@ -1,0 +1,20 @@
+.vegan {
+    color: #1d840e;
+}
+
+.guest,
+.eater,
+.vegan {
+    margin: 1px;
+    height: 20px;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    min-width: 10px;
+}
+
+.guest:enabled:hover,
+.eater:enabled:hover,
+.vegan:enabled:hover {
+    background-color: rgba(172, 215, 235, 0.50)
+}

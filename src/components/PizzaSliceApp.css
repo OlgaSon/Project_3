@@ -1,0 +1,16 @@
+.loadBtn {
+    background: red;
+    color: blue;
+    font-size: 20px;
+}
+
+.textContent {
+    width: 300px;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.vegan {
+    color: #1d840e;
+}

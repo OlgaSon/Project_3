@@ -3,5 +3,5 @@ export const selectGuestsInfo = (state) => {
 };
 
 
-// // export const findGuest = (state) => {
-//     state.guestsInfo.guestsInfo.find(el=> el.id === guestId)}
+export const selectGuestById = (guestId) => (state) => {
+    return state.guestsInfo.guestsInfo.find(el => el.id === guestId)}

@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import {useSelector, useDispatch} from 'react-redux';
 import {addFeedback} from '../store/guestsInfoSlice';
-import {selectGuestsInfo} from "../store/selectors";
-import StarRating from './StarRating'
+import {selectGuestById} from "../store/selectors";
+import StarRating from '../components/StarRating'
 import "./FeedbackForm.css"
 
 
@@ -21,8 +21,7 @@ const FeedbackFormNew = ({ guestId, handleCancel, setShowFeedbackForm }) => {
   });
 
   const dispatch = useDispatch();
-  const guestsInfo = useSelector(selectGuestsInfo);
-  const guest = guestsInfo.find(el=> el.id === guestId);
+  const guest = useSelector(selectGuestById(guestId));
   const [numSelectedStars, setNumSelectedStars] = useState(3);
 
   const handleSave = () => {

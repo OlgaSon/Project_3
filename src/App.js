@@ -4,8 +4,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {PersistGate } from 'redux-persist/integration/react';
 import store, {persistor} from './store';
-import PartyGuestsInfo from './components/PartyGuestsInfo';
-import PizzaSliceApp from './components/PizzaSliceApp';
+import PartyGuestsInfo from './pages/PartyGuestsInfo';
+import PizzaSliceApp from './pages/PizzaSliceApp';
 
 
 function App() {

@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import  {Link} from 'react-router-dom';
-import {getPartyGuests} from '../api/PartyGuestsAPI';
-import {getDiets} from '../api/GuestsDietsAPI';
+import {getPartyGuests} from '../api/partyGuestsAPI';
+import {getDiets} from '../api/guestsDietsAPI';
 import GuestsFeedback from './GuestsFeedback';
 import {selectGuestsInfo} from "../store/selectors";
 import {createGuestsInfo} from '../store/guestsInfoSlice';

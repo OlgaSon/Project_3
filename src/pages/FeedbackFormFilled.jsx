@@ -1,14 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectGuestsInfo } from "../store/selectors";
+import { selectGuestById } from "../store/selectors";
 import { removeFeedback } from '../store/guestsInfoSlice'; 
-import StarRating from './StarRating'
+import StarRating from '../components/StarRating'
 import "./FeedbackForm.css"
 
 
 const FeedbackFormFilled = ({guestId, handleCancel}) => {
   const dispatch = useDispatch();
-  const guestsInfo = useSelector(selectGuestsInfo);
-  const guest = guestsInfo.find(person=> person.id === guestId)
+  const guest = useSelector(selectGuestById(guestId));
  
   return (
     <form className="feedbackForm filledForm">
@@ -23,8 +22,7 @@ const FeedbackFormFilled = ({guestId, handleCancel}) => {
 
         <StarRating
           numSelectedStars={guest.rating}
-          // setNumSelectedStars={false}
-        />     
+          />     
 
         <label>Phone:
           <input value={guest.phone} disabled></input>

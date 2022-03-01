@@ -1,13 +1,12 @@
 import { useSelector} from 'react-redux';
-import { selectGuestsInfo } from "../store/selectors";
+import { selectGuestById } from "../store/selectors";
 import './GuestListItem.css'
 
 
 const GuestListItem = ({guestId, handleClickGuest }) => {
-  const guestsInfo = useSelector(selectGuestsInfo);
-  const guest = guestsInfo.find(person=> person.id === guestId);
+  const guest = useSelector(selectGuestById(guestId));
   const guestClass = guest.isVegan ? 'vegan' : guest.eatsPizza ? 'eater' : 'guest';
-  const isFeedback = guestsInfo.find(item => item.id === guestId).phone ? true : false;
+  const isFeedback = guest.phone ? true : false;
 
   return (<>
     <li>
